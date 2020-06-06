@@ -1,0 +1,11 @@
+{
+  "name": "simple-mqtt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vanducvo/python-trainning.git",
+  "author": "Van Duc Vo <vanducvo.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^4.1.0"
+  }
+}
