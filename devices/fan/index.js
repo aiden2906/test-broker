@@ -12,6 +12,10 @@ class Fan extends EventEmitter {
 
   hello(name1) {
     console.log(name1 + 'abc');
+
+  }
+  hello(name) {
+    console.log(name);
   }
 
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
