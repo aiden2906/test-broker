@@ -1,4 +1,4 @@
-const {EventEmitter} = require('events');
+const { EventEmitter } = require('events');
 /**
  * Fan device
  */
@@ -8,6 +8,10 @@ class Fan extends EventEmitter {
     this.id = id;
     this.level = 0;
     this.status = 0;
+  }
+
+  hello(name1) {
+    console.log(name1 + 'abc');
   }
 
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
@@ -21,9 +25,7 @@ class Fan extends EventEmitter {
   toJSON() {
     return {
       id: 'id2_' + String(this.id),
-      value: this.status
-        ? [String(this.status), String(this.level)]
-        : [String(this.status)],
+      value: this.status ? [String(this.status), String(this.level)] : [String(this.status)],
     };
   }
 }
